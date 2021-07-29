@@ -1,5 +1,5 @@
-import React, { Component, useState, useCallback } from 'react'
-import PathfindingVisualizer from './PathfindingVisualizer/PathfindingVisualizer';
+import React, { Component} from 'react'
+import PathFinder from './PathFinder/PathFinder';
 import './Form.css';
 
 class Form extends Component {
@@ -45,7 +45,6 @@ class Form extends Component {
 	}
 
 	handleTopicChange = event => {
-		console.log("Reached topic")
 		this.setState({
 			topic: event.target.value
 		})
@@ -53,14 +52,8 @@ class Form extends Component {
 
 
 	handleSubmit = event => {
-		console.log("Reached Here")
         event.preventDefault()
-        const data = this.state
-        console.log("Reached here")
-        console.log(data)
 		this.setState({haveSubmitted: true})
-		console.log("Memo status")
-		console.log(this.state.haveSubmitted)
 		alert("You have submitted your data, please press visualize to visualize the DP Table")
 	}
 
@@ -122,9 +115,9 @@ class Form extends Component {
 				</div>
 				<button type="submit" className = "submit-button">Submit</button>
 			</form>
-			<PathfindingVisualizer stringPalindrome = {input1}
+			<PathFinder stringPalindrome = {input1}
 							input2 = {input2} input3 = {input3} input4 = {input4} 
-										input5 = {input5} topic = {topic}></PathfindingVisualizer>
+										input5 = {input5} topic = {topic}></PathFinder>
 			</>
 			)
 		}

@@ -12,13 +12,13 @@ export default class Node extends Component {
     } = this.props;
     var extraClassName;
     if(status === -1){
-      const extraClassName = ''
+      extraClassName = ''
     }
     else if(status === 1){
-      const extraClassName = 'node-true'
+      extraClassName = 'node-true'
     }
     else if(status === 0){
-      const extraClassName = 'node-false'
+      extraClassName = 'node-false'
     }
     
     return (
