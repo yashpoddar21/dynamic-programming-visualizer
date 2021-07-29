@@ -1,5 +1,4 @@
 export function palindrome(s) {
-  console.log(s)
   const visitedNodes = [];
   var dp = []; 
     for(var i1 = 0; i1 < s.length;  i1++) {
@@ -26,8 +25,6 @@ export function palindrome(s) {
             }
         }
     }
-    console.log("Visited nodes from Dijsktra")
-    console.log(visitedNodes)
     return visitedNodes;
 }
 
