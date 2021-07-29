@@ -1,0 +1,33 @@
+.grid {
+    position: fixed;
+    top: 25%;
+    margin: 100px 0 0;
+    left: 2.5%;
+  }
+
+.visualize-button{
+  background-color:pink;
+  position: fixed;
+  color:white; 
+  border-radius: 25px;
+  top: 30%;
+  left: 25%;
+  height: 5%;
+  text-align: center;
+  font-size: large;
+  width: 10%;
+}
+
+.reset-button{
+  background-color:violet;
+  position: fixed;
+  color:white; 
+  border-radius: 25px;
+  top: 30%;
+  right: 25%;
+  height: 5%;
+  text-align: center;
+  font-size: large;
+  width: 10%;
+}
+
